@@ -1031,20 +1031,36 @@
       }
 
       .skills-grid,
-      .edu-grid {
+      .edu-grid,
+      .stats-grid {
         grid-template-columns: 1fr;
       }
 
       .exp-card,
       .edu-card,
-      .skill-card {
+      .skill-card,
+      .stat-card {
         padding: 24px;
+        min-width: 0;
+        word-wrap: break-word;
       }
 
       .footer-inner {
         flex-direction: column;
         align-items: flex-start;
-        gap: 40px;
+        gap: 32px;
+      }
+
+      .footer-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 20px;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
       }
 
       .nav-links {
